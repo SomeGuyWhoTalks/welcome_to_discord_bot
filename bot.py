@@ -23,7 +23,7 @@ async def on_ready():
 @client.event
 async def on_member_join(member):
     print("Recognised that a member called " + member.name + " joined")
-    await client.send_message(client.get_channel("490829315026583574"), newUserMessage)
+    await client.send_message(client.get_channel("CLient_ID"), newUserMessage)
     print("Sent message to " + member.name)
 
     role = discord.utils.get(member.server.roles, name="ROLE")
